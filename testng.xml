@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
+    <listeners>
+        <listener class-name="Testing.Listeners"></listener>
+    </listeners>
     <test verbose="2" preserve-order="true" name="C:/Users/malpraneeth/IdeaProjects/Major_Assignment_Maven">
         <classes>
             <class name="Testing.Bank_Login_Test">
-                <methods>
-                <include name="validateBankMangerClick"/>
-                    <include name="validateAddCustomer"/>
-                    <include name="validateADD"/>
-                    <include name="validateConfirmAdd"/>
-                    <include name="validateOpenCustomer"/>
-
-                    <include name="validateSelect"/>
-                </methods>
+                
             </class>
+            <class name="Testing.Cust_Login_Test"></class>
         </classes>
     </test>
 </suite>
